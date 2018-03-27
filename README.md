@@ -7,7 +7,7 @@ Introduction:
 Event Bus is a simple library which helps to share data between Activities and Fragments .
 Easy to USe and reduce the huge line of code .
 (ie;)
-We can say that it is a replacement is using intent to send the code 
+We can say that it is a replacement of using intent to send the code 
 
 Steps To Use Event Bus:
 ------------------------
@@ -26,7 +26,7 @@ d.)Now we have to register the event in the Activity which recieves the event an
    Create a function with anotation @Subscribe
 
  EventBus eventBus =  EventBus.getDefault();
-eventBus.register(this); 
+  eventBus.register(this); //register The event
 
 
  @Subscribe(sticky = true) // You can see the doc for other parameters you can pass.
@@ -38,5 +38,5 @@ eventBus.register(this);
     }
 
 
-eventBus.unregister(this); 
+eventBus.unregister(this); //Un register once finished
               
